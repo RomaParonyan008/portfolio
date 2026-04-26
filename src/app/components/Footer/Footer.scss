@@ -1,0 +1,156 @@
+.footer {
+  position: relative;
+  padding: 80px 60px 40px;
+  background-color: #0a0511;
+  overflow: hidden;
+}
+
+.footer-glow {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 200px;
+  background: radial-gradient(ellipse, rgba(155, 93, 229, 0.15) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.footer-content {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.footer-brand {
+  text-align: center;
+
+  .brand-text {
+    font-family: var(--moano);
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text);
+    letter-spacing: 3px;
+  }
+
+  p {
+    font-family: var(--plus);
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 10px;
+    max-width: 300px;
+  }
+}
+
+.footer-social {
+  display: flex;
+  gap: 15px;
+}
+
+.social-link {
+  width: 48px;
+  height: 48px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: rgba(155, 93, 229, 0.2);
+    border-color: var(--text);
+    transform: translateY(-5px);
+    color: var(--text);
+  }
+}
+
+.footer-divider {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(155, 93, 229, 0.3), transparent);
+  margin: 10px 0;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.copyright {
+  font-family: var(--moano);
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.made-with {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--plus);
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.4);
+
+  .heart-icon {
+    color: #e25555;
+    font-size: 0.8rem;
+    animation: heartbeat 1.5s ease-in-out infinite;
+  }
+}
+
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+}
+
+/* ===============================
+   768px – Tablets
+================================*/
+@media (max-width: 768px) {
+  .footer {
+    padding: 60px 30px 30px;
+  }
+
+  .footer-brand .brand-text {
+    font-size: 1.8rem;
+  }
+
+  .footer-brand p {
+    font-size: 0.9rem;
+  }
+}
+
+/* ===============================
+   480px – Mobile
+================================*/
+@media (max-width: 480px) {
+  .footer {
+    padding: 50px 20px 25px;
+  }
+
+  .footer-brand .brand-text {
+    font-size: 1.5rem;
+  }
+
+  .copyright,
+  .made-with {
+    font-size: 0.8rem;
+  }
+
+  .social-link {
+    width: 42px;
+    height: 42px;
+    font-size: 1rem;
+  }
+}

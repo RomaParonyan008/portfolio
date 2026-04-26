@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Port+Lligat+Slab&family=Preahvihear&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Stailid fonts", sans-serif;
+  src: url("./assets/Fonts/Preahvihear-Regular.ttf");
+}
+
+:root {
+  --plus: "Plus Jakarta Sans", sans-serif;
+  --styled-font: "Preahvihear", sans-serif;
+  --moano: "JetBrains Mono", monospace;
+  --lits-light: "Port Lligat Slab", serif;
+  --fira-code: "Fira Code", monospace;
+  --text: #9b5de5;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  background-color: #11071f;
+  color: white;
+  font-family: var(--plus);
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+main {
+  background-color: #11071f;
+  min-height: 100vh;
+}
+
+::selection {
+  background: rgba(155, 93, 229, 0.3);
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #11071f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #9b5de5;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b87aed;
+}
+
+/* Hide Next.js branding/logo */
+.__next-ide-overlay,
+[data-nextjs-logo],
+[class*="next-logo"],
+[class*="next-logo"] * {
+  display: none !important;
+}

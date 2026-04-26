@@ -1,0 +1,399 @@
+.about-section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 120px 60px;
+  background-color: #11071f;
+  position: relative;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 80px;
+
+  h2 {
+    font-size: 3rem;
+    font-family: var(--fira-code);
+    color: white;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+
+    span {
+      color: var(--text);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 3px;
+      background: linear-gradient(90deg, var(--text), #763cac);
+      border-radius: 3px;
+    }
+  }
+
+  p {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: var(--moano);
+  }
+}
+
+.about-content {
+  display: flex;
+  gap: 80px;
+  max-width: 1300px;
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+.about-info {
+  flex: 1;
+}
+
+.about-card {
+  background: rgba(155, 93, 229, 0.08);
+  border: 1px solid rgba(155, 93, 229, 0.2);
+  border-radius: 20px;
+  padding: 40px;
+  backdrop-filter: blur(10px);
+
+  h3 {
+    font-size: 2rem;
+    font-family: var(--fira-code);
+    color: white;
+    margin-bottom: 25px;
+
+    span {
+      color: var(--text);
+    }
+  }
+
+  p {
+    font-family: var(--plus);
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.8;
+    margin-bottom: 20px;
+
+    strong {
+      color: var(--text);
+    }
+  }
+}
+
+.contact-btn {
+  margin-top: 20px;
+  padding: 14px 40px;
+  font-size: 1rem;
+  font-family: var(--moano);
+  font-weight: 600;
+  background: linear-gradient(135deg, #9b5de5, #763cac);
+  border: none;
+  border-radius: 30px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(155, 93, 229, 0.4);
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 30px rgba(155, 93, 229, 0.5);
+  }
+}
+
+.about-skills {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+
+  h3 {
+    font-size: 2rem;
+    font-family: var(--fira-code);
+    color: white;
+    margin-bottom: 30px;
+
+    span {
+      color: var(--text);
+    }
+  }
+}
+
+.skills-categories {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.skill-category {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 20px 25px;
+}
+
+.category-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+  font-family: var(--moano);
+  font-size: 1rem;
+  color: var(--text);
+  font-weight: 600;
+}
+
+.category-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-tag {
+  background: rgba(155, 93, 229, 0.15);
+  border: 1px solid rgba(155, 93, 229, 0.3);
+  color: white;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-family: var(--fira-code);
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+  cursor: default;
+
+  &:hover {
+    background: rgba(155, 93, 229, 0.3);
+    transform: translateY(-2px);
+  }
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skill-item {
+  background: rgba(255, 255, 255, 0.95);
+  color: #343a40;
+  border: 1px solid #dee2e6;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-family: var(--moano);
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: default;
+
+  &:hover {
+    background: #e9ecef;
+    border-color: #ced4da;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.about-stats {
+  display: flex;
+  gap: 80px;
+  padding: 40px 60px;
+  background: rgba(155, 93, 229, 0.08);
+  border: 1px solid rgba(155, 93, 229, 0.2);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.stat-number {
+  font-family: var(--fira-code);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.stat-label {
+  font-family: var(--moano);
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+  letter-spacing: 1px;
+}
+
+/* ===============================
+   1200px – Large laptops
+================================*/
+@media (max-width: 1200px) {
+  .about-section {
+    padding: 100px 50px;
+  }
+
+  .about-content {
+    gap: 50px;
+  }
+}
+
+/* ===============================
+   1024px – Small laptops / Tablets
+================================*/
+@media (max-width: 1024px) {
+  .about-section {
+    padding: 80px 40px;
+  }
+
+  .about-content {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .about-info,
+  .about-skills {
+    width: 100%;
+  }
+
+  .about-stats {
+    gap: 50px;
+    padding: 30px 40px;
+  }
+
+  .stat-number {
+    font-size: 2rem;
+  }
+}
+
+/* ===============================
+   768px – Tablets
+================================*/
+@media (max-width: 768px) {
+  .about-section {
+    padding: 60px 30px;
+  }
+
+  .about-header {
+    margin-bottom: 50px;
+
+    h2 {
+      font-size: 2.2rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  .about-card {
+    padding: 30px;
+
+    h3 {
+      font-size: 1.6rem;
+    }
+
+    p {
+      font-size: 0.95rem;
+    }
+  }
+
+  .about-skills h3 {
+    font-size: 1.6rem;
+  }
+
+  .about-stats {
+    gap: 30px;
+    padding: 25px 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .stat-number {
+    font-size: 1.8rem;
+  }
+}
+
+/* ===============================
+   480px – Mobile
+================================*/
+@media (max-width: 480px) {
+  .about-section {
+    padding: 50px 20px;
+  }
+
+  .about-header {
+    margin-bottom: 40px;
+
+    h2 {
+      font-size: 1.8rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+    }
+  }
+
+  .about-card {
+    padding: 25px 20px;
+
+    h3 {
+      font-size: 1.4rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+  }
+
+  .contact-btn {
+    width: 100%;
+    padding: 12px 30px;
+  }
+
+  .about-skills h3 {
+    font-size: 1.4rem;
+  }
+
+  .skill-item {
+    padding: 8px 14px;
+    font-size: 0.85rem;
+  }
+
+  .about-stats {
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+  }
+
+  .stat-number {
+    font-size: 1.5rem;
+  }
+
+  .stat-label {
+    font-size: 0.8rem;
+  }
+}
+
+/* ===============================
+   360px – Small Mobile
+================================*/
+@media (max-width: 360px) {
+  .about-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .about-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .about-stats {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

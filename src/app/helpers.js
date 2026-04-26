@@ -1,0 +1,15 @@
+export const skils = [
+  "HTML",
+  "CSS",
+  "SASS",
+  "TAILWIND",
+  "BOOTSRAP",
+  "Responsive Design",
+  "JavaScript",
+  "React",
+  "Redux",
+  "REDUX/TOOLKIT",
+  "jQuery",
+  "GIT",
+  "GitHub",
+];
